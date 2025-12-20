@@ -1,77 +1,28 @@
-import axios from 'axios';
+import { aboutData, projectsData, powerBIData, socialData } from '../data/portfolioData';
+import type { AboutData, Project, PowerBIReport, SocialLink } from '../types';
 
-const api = axios.create({
-    baseURL: 'http://localhost:8000/api',
-    headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-    },
-});
+export type { AboutData, Project, PowerBIReport, SocialLink } from '../types';
+export type { Experience, Education } from '../types'; // Re-export nested types if needed by consumers
 
-export interface Experience {
-    company: string;
-    role: string;
-    period: string;
-    description: string;
-}
-
-export interface Education {
-    institution: string;
-    degree: string;
-    year: string;
-}
-
-export interface AboutData {
-    name: string;
-    role: string;
-    bio: string;
-    contact: { city: string };
-    experience: Experience[];
-    education: Education[];
-    skills: Record<string, string[]>;
-}
+// Mock delay to simulate network request (optional, for effect)
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const getAbout = async (): Promise<AboutData> => {
-    const response = await api.get('/about');
-    return response.data;
+    await delay(300); // Small delay for skeleton animation
+    return aboutData;
 };
-
-export interface Project {
-    id: number;
-    title: string;
-    description: string;
-    tech_stack: string[];
-    image: string;
-    link: string;
-    repo: string;
-}
 
 export const getProjects = async (): Promise<Project[]> => {
-    const response = await api.get('/projects');
-    return response.data;
+    await delay(400);
+    return projectsData;
 };
-
-export interface PowerBIReport {
-    id: number;
-    title: string;
-    embedUrl: string;
-    description: string;
-}
 
 export const getPowerBI = async (): Promise<PowerBIReport[]> => {
-    const response = await api.get('/powerbi');
-    return response.data;
+    await delay(300);
+    return powerBIData;
 };
-
-export interface SocialLink {
-    platform: string;
-    url: string;
-    text: string;
-}
 
 export const getSocial = async (): Promise<SocialLink[]> => {
-    const response = await api.get('/social');
-    return response.data;
+    await delay(100);
+    return socialData;
 };
-
-export default api;
