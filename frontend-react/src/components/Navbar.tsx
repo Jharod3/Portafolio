@@ -35,6 +35,7 @@ const Navbar = () => {
                             <NavLink to="/about" active={isActive('/about')}>Sobre mí</NavLink>
                             <NavLink to="/projects" active={isActive('/projects')}>Proyectos</NavLink>
                             <NavLink to="/powerbi" active={isActive('/powerbi')}>PowerBI</NavLink>
+                            <NavLink to="/contact" active={isActive('/contact')}>Contacto</NavLink>
                         </div>
                     </div>
 
@@ -66,6 +67,7 @@ const Navbar = () => {
                     <MobileNavLink to="/about" onClick={() => setIsOpen(false)} active={isActive('/about')}>Sobre mí</MobileNavLink>
                     <MobileNavLink to="/projects" onClick={() => setIsOpen(false)} active={isActive('/projects')}>Proyectos</MobileNavLink>
                     <MobileNavLink to="/powerbi" onClick={() => setIsOpen(false)} active={isActive('/powerbi')}>PowerBI</MobileNavLink>
+                    <MobileNavLink to="/contact" onClick={() => setIsOpen(false)} active={isActive('/contact')}>Contacto</MobileNavLink>
                 </div>
             </div>
         </nav>

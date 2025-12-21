@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import PowerBI from './pages/PowerBI';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/powerbi" element={<PowerBI />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
