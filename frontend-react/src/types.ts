@@ -31,13 +31,6 @@ export interface Project {
     repo: string;
 }
 
-export interface PowerBIReport {
-    id: number;
-    title: string;
-    embedUrl: string;
-    description: string;
-}
-
 export interface SocialLink {
     platform: string;
     url: string;

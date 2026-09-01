@@ -1,7 +1,7 @@
-import { aboutData, projectsData, powerBIData, socialData } from '../data/portfolioData';
-import type { AboutData, Project, PowerBIReport, SocialLink } from '../types';
+import { aboutData, projectsData, socialData } from '../data/portfolioData';
+import type { AboutData, Project, SocialLink } from '../types';
 
-export type { AboutData, Project, PowerBIReport, SocialLink } from '../types';
+export type { AboutData, Project, SocialLink } from '../types';
 export type { Experience, Education } from '../types'; // Re-export nested types if needed by consumers
 
 // Mock delay to simulate network request (optional, for effect)
@@ -15,11 +15,6 @@ export const getAbout = async (): Promise<AboutData> => {
 export const getProjects = async (): Promise<Project[]> => {
     await delay(400);
     return projectsData;
-};
-
-export const getPowerBI = async (): Promise<PowerBIReport[]> => {
-    await delay(300);
-    return powerBIData;
 };
 
 export const getSocial = async (): Promise<SocialLink[]> => {

@@ -1,4 +1,4 @@
-import type { AboutData, Project, PowerBIReport, SocialLink } from '../types';
+import type { AboutData, Project, SocialLink } from '../types';
 
 export const aboutData: AboutData = {
     name: 'Jharod Miguel Hidalgo',
@@ -88,15 +88,6 @@ export const projectsData: Project[] = [
         image: '/img/app_fianzas.png',
         link: 'https://app-finanzas-flax.vercel.app/',
         repo: 'https://github.com/Jharod3/App_Finanzas'
-    }
-];
-
-export const powerBIData: PowerBIReport[] = [
-    {
-        id: 1,
-        title: 'Indicadores de Gestión 2024',
-        embedUrl: 'https://app.powerbi.com/reportEmbed?reportId=placeholder',
-        description: 'Visualización de KPIs estratégicos.'
     }
 ];
 
