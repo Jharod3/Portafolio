@@ -43,7 +43,7 @@ const Projects = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project) => (
                     <div key={project.id} className="project-card opacity-0 bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-slate-800 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                        <div className="h-48 overflow-hidden bg-gray-100 dark:bg-slate-800 relative group">
+                        <div className="aspect-[3/2] overflow-hidden bg-gray-100 dark:bg-slate-800 relative group">
                             <img
                                 src={project.image}
                                 alt={project.title}
@@ -52,7 +52,18 @@ const Projects = () => {
                             />
                             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                                 {project.link && <a href={project.link} target="_blank" rel="noopener" className="p-3 bg-white rounded-full text-slate-900 hover:scale-110 transition"><FaExternalLinkAlt /></a>}
-                                {project.repo && <a href={project.repo} target="_blank" rel="noopener" className="p-3 bg-white rounded-full text-slate-900 hover:scale-110 transition"><FaGithub /></a>}
+                                {project.repo && (
+                                    project.repo.startsWith('#') ? (
+                                        <span
+                                            title={project.repo.slice(1)}
+                                            className="p-3 bg-white/70 rounded-full text-slate-400 cursor-not-allowed"
+                                        >
+                                            <FaGithub />
+                                        </span>
+                                    ) : (
+                                        <a href={project.repo} target="_blank" rel="noopener" className="p-3 bg-white rounded-full text-slate-900 hover:scale-110 transition"><FaGithub /></a>
+                                    )
+                                )}
                             </div>
                         </div>
                         <div className="p-6 flex-1 flex flex-col">
