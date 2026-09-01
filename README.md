@@ -3,11 +3,11 @@
 Personal Portfolio built with **React**, **TypeScript**, and **Tailwind CSS**.
 
 ## Features
-- ⚡ **Vite** for fast development and building.
-- 🎨 **Tailwind CSS** for modern and responsive styling.
-- 🌙 **Dark Mode** support.
-- 🎭 **Anime.js** for smooth interactions and animations.
-- 📱 **Mobile-first** design.
+- **Vite** for fast development and building.
+- **Tailwind CSS** for modern and responsive styling.
+- **Dark Mode** support.
+- **Anime.js** for smooth interactions and animations.
+- **Mobile-first** design.
 
 ## Setup
 
