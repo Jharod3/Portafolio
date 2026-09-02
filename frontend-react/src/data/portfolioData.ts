@@ -1,24 +1,24 @@
 import type { AboutData, Project, SocialLink } from '../types';
 
 export const aboutData: AboutData = {
-    name: 'Jharod Miguel Hidalgo',
-    role: 'Full Stack Web Developer & Data Analyst',
-    bio: 'Desarrollador web full stack y analista de datos con experiencia en Python, PowerBI, React, PHP y SQL. Apasionado por el aprendizaje continuo y el diseño UX. Experiencia en creación de interfaces dinámicas y automatización de procesos.',
+    name: 'Jharod Miguel Hidalgo Osorio',
+    role: 'Desarrollador Web Full Stack Jr. & Analista de Datos',
+    bio: 'Desarrollador web con experiencia en React, PHP, JavaScript y CodeIgniter, y conocimientos en análisis de datos con SQL, Python y Power BI. Soy responsable, comprometido, leal y perseverante, con capacidad para trabajar en equipo y tomar decisiones orientadas al cumplimiento de objetivos. Me apasiona seguir aprendiendo y construir soluciones centradas en la experiencia de usuario y el análisis de información.',
     contact: {
         city: 'Copacabana, Antioquia'
     },
     experience: [
         {
-            company: 'Gobernación de Antioquia',
-            role: 'Desarrollador web full stack',
-            period: 'Abril 2024 - Presente',
-            description: 'Implementación de flujos automatizados en Python para PowerBI. Desarrollo de aplicaciones con CodeIgniter, PHP y MySQL. Gestión de datos de API externas y limpieza/normalización.'
+            company: 'Valor+ · Gobernación de Antioquia (Dirección de TI)',
+            role: 'Desarrollador Web Full Stack',
+            period: 'Abril 2024 - Presente · Medellín, Colombia',
+            description: 'Desarrollo de flujos automatizados en Python conectados a Power BI para tableros y visualizaciones estratégicas. Construcción de aplicaciones dinámicas con CodeIgniter, PHP y MySQL, y mejora de la interfaz con React y JavaScript. Gestión y limpieza de datos desde APIs externas y archivos Excel, y creación de dashboards interactivos que incrementaron el uso de la plataforma.'
         },
         {
             company: 'QCode',
-            role: 'Desarrollador frontend Jr',
+            role: 'Desarrollador Frontend Jr',
             period: 'Abril 2023 - Octubre 2023',
-            description: 'Creación y mantenimiento de interfaces con React.js. Desarrollo de componentes reutilizables y formularios dinámicos.'
+            description: 'Apoyo al equipo técnico en la creación, mantenimiento y optimización de interfaces web con React.js, mediante maquetación y componentes reutilizables con diseño limpio, accesible y alineado a estándares modernos.'
         }
     ],
     education: [
@@ -54,10 +54,11 @@ export const aboutData: AboutData = {
         }
     ],
     skills: {
-        'Frontend': ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'TailwindCSS', 'Leaflet'],
-        'Backend': ['PHP', 'NodeJS', 'Python', 'Java'],
-        'Data': ['PowerBI', 'SQL', 'MySQL', 'Excel', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'DAX', 'Deneb (Vega-Lite)', 'Jupyter Notebook'],
-        'Tools': ['Git', 'VS Code', 'Scrum', 'Claude Code', 'RapidAPI', 'Google Auth', 'NVIDIA NIM APIs']
+        'Lenguajes': ['Python', 'SQL', 'JavaScript', 'TypeScript', 'PHP'],
+        'Frontend': ['React', 'HTML5', 'CSS3', 'TailwindCSS', 'Leaflet'],
+        'Backend': ['PHP', 'CodeIgniter', 'NodeJS', 'Java'],
+        'Datos & BI': ['Power BI', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'DAX', 'Deneb (Vega-Lite)', 'MySQL', 'Excel'],
+        'Herramientas': ['Git', 'Azure DevOps', 'Jupyter Notebook', 'Google Sheets', 'Notion', 'Jira', 'VS Code', 'Scrum', 'Claude Code', 'RapidAPI', 'Google Auth', 'NVIDIA NIM APIs']
     }
 };
 
